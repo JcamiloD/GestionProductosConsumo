@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Añade useState aquí
+import React, { useState } from 'react'; 
 import { 
   TextField, 
   Button, 
@@ -18,7 +18,7 @@ const validationSchema = Yup.object({
 
 const CategoryForm = ({ initialValues = { name: '' }, onSubmit, isEdit = false }) => {
   const navigate = useNavigate();
-  const [error, setError] = useState(null); // Ahora useState está definido
+  const [error, setError] = useState(null); 
 
   const formik = useFormik({
     initialValues,

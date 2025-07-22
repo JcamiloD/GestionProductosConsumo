@@ -7,7 +7,7 @@ import { createProduct, updateProduct, getProductById } from '../services/produc
 const ProductFormPage = ({ isEdit = false }) => {
   const { id } = useParams();
   const [initialValues, setInitialValues] = useState(null);
-  const [loading, setLoading] = useState(isEdit); // Solo carga en modo edición
+  const [loading, setLoading] = useState(isEdit);
   const [error, setError] = useState(null);
 
   useEffect(() => {

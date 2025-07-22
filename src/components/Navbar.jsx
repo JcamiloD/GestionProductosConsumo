@@ -38,7 +38,6 @@ const Navbar = () => {
   return (
     <AppBar position="static" elevation={0} sx={{ backgroundColor: 'background.paper' }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        {/* Logo/Brand */}
         <Box component={Link} to="/" sx={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <StorefrontIcon color="primary" sx={{ fontSize: 40, mr: 1 }} />
           <Typography variant="h6" component="div" sx={{ 
@@ -50,7 +49,6 @@ const Navbar = () => {
           </Typography>
         </Box>
 
-        {/* Navigation - Desktop */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
           <Button
             component={Link}
@@ -79,7 +77,6 @@ const Navbar = () => {
           </Button>
         </Box>
 
-        {/* Mobile Menu */}
         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
           <IconButton
             size="large"
@@ -115,7 +112,6 @@ const Navbar = () => {
           </Menu>
         </Box>
 
-        {/* Additional Actions */}
         <Box>
           <IconButton component={Link} to="/cart" sx={{ color: 'text.primary' }}>
             <ShoppingCartIcon />

@@ -149,7 +149,6 @@ const ProductDetail = () => {
         </CardContent>
       </Card>
 
-      {/* Diálogo de confirmación para eliminar */}
       <Dialog
         open={openDeleteDialog}
         onClose={handleCloseDeleteDialog}

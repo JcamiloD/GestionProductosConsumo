@@ -53,7 +53,7 @@ const ProductList = () => {
     try {
       setDeleting(true);
       await deleteProduct(productToDelete);
-      await fetchProducts(); // Refrescar la lista después de eliminar
+      await fetchProducts();
     } catch (err) {
       setError(err.message);
     } finally {
@@ -126,7 +126,6 @@ const ProductList = () => {
         </Table>
       </TableContainer>
 
-      {/* Diálogo de confirmación para eliminar */}
       <Dialog
         open={deleteDialogOpen}
         onClose={handleCloseDeleteDialog}

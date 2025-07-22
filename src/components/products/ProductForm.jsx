@@ -36,7 +36,6 @@ const ProductForm = ({ initialValues = null, onSubmit, isEdit = false }) => {
   const [error, setError] = useState(null);
   const [loadingCategories, setLoadingCategories] = useState(true);
 
-  // Carga las categorías y establece valores iniciales
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -61,7 +60,7 @@ const ProductForm = ({ initialValues = null, onSubmit, isEdit = false }) => {
       category_id: ''
     },
     validationSchema,
-    enableReinitialize: true, // Permite reinicializar con nuevos valores
+    enableReinitialize: true,
     onSubmit: async (values, { setSubmitting }) => {
       try {
         await onSubmit(values);

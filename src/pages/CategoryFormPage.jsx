@@ -12,14 +12,13 @@ import { createCategory, updateCategory, getCategoryById } from '../services/cat
 const CategoryFormPage = ({ isEdit = false }) => {
   const { id } = useParams();
   const [initialValues, setInitialValues] = useState({ name: '' });
-  const [loading, setLoading] = useState(isEdit); // Solo carga en modo edición
+  const [loading, setLoading] = useState(isEdit); 
   const [error, setError] = useState(null);
   
   const handleSubmit = isEdit 
     ? (data) => updateCategory(id, data)
     : createCategory;
 
-  // Obtener los datos de la categoría cuando está en modo edición
   useEffect(() => {
     if (isEdit && id) {
       const fetchCategory = async () => {

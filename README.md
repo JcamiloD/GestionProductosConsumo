@@ -20,7 +20,7 @@ Clonamos el proyecto e instalamos dependencias.
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/JcamiloD/GestionProductosConsumo.git
-cd GestionProductos
+cd GestionProductosConsumo
 
 # 2. Instalar dependencias
 npm install

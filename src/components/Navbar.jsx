@@ -19,7 +19,6 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 
 const Navbar = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [anchorEl, setAnchorEl] = React.useState(null);
   const location = useLocation();
 

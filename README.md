@@ -1,7 +1,7 @@
 
 # Gestión de productos y categorías
 
-Este proyecto consiste en una API RESTful desarrollada con Node.js y Express, destinada a la gestión de productos y sus respectivas categorías.
+Este proyecto consiste en un Front sencillo y funcional de gestion de productos y categorías, desarrollada con react.
 
 
 
